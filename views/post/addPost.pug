@@ -1,0 +1,17 @@
+extends ../layout
+
+block main
+  .main-content
+    h1.display-4.text-center.my-4 New Post
+    form.add-post(action='/posts', method='post')
+      .form-group
+        label(for='title') Title:
+        input#title.form-control(name='title', type='text', placeholder='Enter title')
+      .form-group
+        label(for='imageUrl') Cover Image:
+        input#url.form-control(name='imageUrl', type='text', placeholder='Cover Image URL')
+      .form-group
+        label(for='body') Body:
+        textarea.form-control(name="body", id="body" cols="30", rows="7")
+      button.btn.btn-primary.btn-block(type='submit') Publish
+    

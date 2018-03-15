@@ -1,0 +1,18 @@
+extends ../layout
+
+block main
+
+  .main-content
+    form(action='/login', method='post')
+      h1.display-4.text-center.my-2 Log In
+      .form-group
+        label(for='username') Username:
+        input#username.form-control(name='username', type='text', placeholder='Enter your username')
+      .form-group
+        label(for='password') Password:
+        input#password.form-control(name='password', type='password', placeholder='Enter your Password')
+      button.btn.btn-primary.btn-block.my-4(type='submit') Log In
+      .account-status
+        a(href="/register") New here? Create acount
+
+

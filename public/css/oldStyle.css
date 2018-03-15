@@ -1,0 +1,138 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clearfix {
+  display: table !important;
+  content: "" !important;
+  clear: both !important;
+}
+
+body {
+  background: url("/img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: #fff !important;
+  box-shadow: 0 3px 24px rgba(0,0,0, .1) !important;
+  height: 80px !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+
+/* header .left {
+  position: absolute !important;
+  float: left;
+  left: 20px;
+  top: 22px;
+}
+
+header .left h1 {
+  font-family: "Aller Display";
+  font-size: 22px;
+  color: #5fb3cf;
+}
+
+header .right {
+  position: absolute;
+  float: right;
+  right: 40px;
+  top: 13px;
+}
+
+header .right li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.right li a {
+  font-family: "Aller";
+  font-size: 18px;
+  color: #74c0c9;
+  display: block;
+  padding: 10px;
+}
+
+/* .post-btn {
+} */
+
+/*#post-btn {
+  font-size: 16px;
+  border-radius: 3px;
+  background: #2dadd2;
+  color: #fff;
+  padding: 4px 15px;
+  transition: background .4s ease-out;
+}
+
+#post-btn:hover {
+  background: #d22db9;
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
+.section-1, .section-2, .section-3 {
+  margin-top: 80px;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  margin-right: -4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}*/
+
+/* .section-2 {
+} */
+
+/*.section-2 h2 {
+  font-family: "Aller Light";
+  font-size: 22px;
+  color: #8091ce;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-2 form {
+  border-radius: 4px;
+  padding: 30px;
+  background: #fff;
+  width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 22px 35px rgba(0,0,0, .4)
+}
+
+.section-2 form button {
+  margin-top: 30px;
+}
+
+form.add-post {
+  background: #fff;
+  margin: 80px auto;
+  width: 500px;
+  padding: 25px;
+  border-radius: 4px;
+} */
+
+

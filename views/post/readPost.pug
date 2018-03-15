@@ -1,0 +1,19 @@
+extends ../layout
+
+block main
+
+  .main-content
+    .card.text
+      img.card-img-top(src=`${post.imageUrl}`, alt='Card image cap')
+      .card-body
+        h5.card-title #{post.title}
+        h6.card-subtitle= `${post._author.username} @ ${post.createdAt.toLocaleString()}`
+        hr
+        p.card-text
+          | #{post.body}
+        button.btn.btn-primary.card-link 
+          | Views  
+          span.badge.badge-light #{post.views}
+        a.btn.btn-primary.card-link(href=`/posts/${post._id}/likes`)
+          | Likes  
+          span.badge.badge-light #{post.likes}

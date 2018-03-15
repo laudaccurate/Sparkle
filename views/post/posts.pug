@@ -1,0 +1,18 @@
+extends ../layout
+
+block main
+
+  .main-content
+    h1.display-4.text-center.my-4 Posts
+    each post in posts
+      .card.text(style='width: 28rem;')
+        img.card-img-top.image(src=`${post.imageUrl}`, alt='Card image cap')
+        .card-body
+          h5.card-title #{post.title}
+          h6.card-subtitle= `${post._author.username} @ ${post.createdAt.toLocaleString()}`
+          hr
+          p.card-text
+            | #{post.body}
+          a.card-link(href=`/posts/${post._id}`) 
+            | Continue reading.........
+
